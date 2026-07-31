@@ -1,0 +1,39 @@
+/* =====================================================
+   CARDS
+===================================================== */
+
+.card{
+
+    border:none;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow-small);
+
+    transition:var(--transition);
+
+}
+
+.card:hover{
+
+    box-shadow:var(--shadow-medium);
+
+}
+
+.card-header{
+
+    background:#FFF;
+
+    border-bottom:1px solid var(--border);
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+.card-body{
+
+    padding:25px;
+
+}

@@ -1,0 +1,35 @@
+/* =====================================================
+   MAPA
+===================================================== */
+
+#map{
+
+    width:100%;
+
+    height:650px;
+
+    border-radius:var(--radius);
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow-medium);
+
+}
+
+.leaflet-popup-content{
+
+    font-size:14px;
+
+}
+
+.leaflet-control-zoom{
+
+    border:none !important;
+
+}
+
+.leaflet-bar{
+
+    box-shadow:var(--shadow-small);
+
+}

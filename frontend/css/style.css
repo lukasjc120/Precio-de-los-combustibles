@@ -1,143 +1,33 @@
+/* =====================================================
+   IMPORTACIONES
+===================================================== */
 
-:root{
-  --primary:#0d6efd;
-  --dark:#212529;
-  --light:#f8f9fa;
-  --bg:#eef2f7;
-  --card:#ffffff;
-  --text:#212529;
-  --radius:14px;
-  --shadow:0 6px 18px rgba(0,0,0,.08);
-}
-*{margin:0;padding:0;box-sizing:border-box}
-body{
-  font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
-  background:var(--bg);
-  color:var(--text);
-  min-height:100vh;
-}
-.navbar{box-shadow:var(--shadow)}
-.navbar-brand{font-weight:700}
-.container{max-width:1320px}
-.dashboard-card{
-  border:none;
-  border-radius:var(--radius);
-  box-shadow:var(--shadow);
-  transition:.25s;
-  background:var(--card);
-}
-.dashboard-card:hover{
-  transform:translateY(-4px);
-}
-.dashboard-card h6{
-  color:#6c757d;
-  font-weight:600;
-}
-.dashboard-card h3{
-  color:var(--primary);
-  font-weight:700;
-}
-.card{
-  border:none;
-  border-radius:var(--radius);
-  box-shadow:var(--shadow);
-}
-.card-header{
-  background:#fff;
-  font-weight:700;
-}
-.form-control{
-  border-radius:10px;
-}
-.btn{
-  border-radius:10px;
-}
-.table{
-  margin-bottom:0;
-}
-.table thead th{
-  white-space:nowrap;
-}
-.table tbody tr{
-  transition:.15s;
-}
-.table tbody tr:hover{
-  background:#eef6ff;
-}
-#map{
-  width:100%;
-  height:600px;
-  border-radius:12px;
-}
-#graficoPrecios{
-  width:100%;
-  min-height:400px;
-}
-footer{
-  margin-top:50px;
-}
-.loading{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  padding:30px;
-}
-.badge-suba{
-  background:#198754;
-}
-.badge-baja{
-  background:#dc3545;
-}
-.badge-igual{
-  background:#6c757d;
-}
-.fade-in{
-  animation:fade .4s ease-in-out;
-}
-@keyframes fade{
- from{opacity:0;transform:translateY(8px)}
- to{opacity:1;transform:translateY(0)}
-}
-/* Dark mode */
-body.dark{
-  --bg:#121212;
-  --card:#1f1f1f;
-  --text:#f1f1f1;
-}
-body.dark .card,
-body.dark .card-header{
-  background:#1f1f1f;
-  color:#f1f1f1;
-}
-body.dark .table{
-  color:#f1f1f1;
-}
-body.dark .table-striped>tbody>tr:nth-of-type(odd){
-  --bs-table-accent-bg:#242424;
-}
-body.dark .form-control{
-  background:#2d2d2d;
-  color:#fff;
-  border-color:#555;
-}
-body.dark .form-control::placeholder{
-  color:#bbb;
-}
-body.dark footer{
-  background:#000!important;
-}
-/* Responsive */
-@media(max-width:992px){
-  .dashboard-card{margin-bottom:15px}
-  #map{height:450px}
-}
-@media(max-width:768px){
-  h2{font-size:1.6rem}
-  #map{height:350px}
-  .card-body{padding:1rem}
-}
-@media(max-width:576px){
-  .navbar-brand{font-size:1rem}
-  #map{height:300px}
-  .btn{width:100%;margin-bottom:10px}
-}
+@import url("variables.css");
+
+@import url("reset.css");
+
+@import url("navbar.css");
+
+@import url("dashboard.css");
+
+@import url("cards.css");
+
+@import url("filtros.css");
+
+@import url("tabla.css");
+
+@import url("mapa.css");
+
+@import url("charts.css");
+
+@import url("footer.css");
+
+@import url("darkmode.css");
+
+@import url("animations.css");
+
+@import url("loader.css");
+
+@import url("toast.css");
+
+@import url("responsive.css");

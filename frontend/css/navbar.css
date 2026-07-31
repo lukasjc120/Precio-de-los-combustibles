@@ -1,0 +1,121 @@
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar{
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        #084298
+    ) !important;
+
+    box-shadow:var(--shadow-medium);
+
+    padding:12px 0;
+
+    transition:var(--transition);
+
+}
+
+.navbar-brand{
+
+    font-size:1.5rem;
+
+    font-weight:700;
+
+    color:var(--text-white) !important;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.navbar-brand i{
+
+    font-size:1.8rem;
+
+}
+
+.navbar-nav{
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.nav-link{
+
+    color:rgba(255,255,255,.85) !important;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    padding:8px 14px !important;
+
+    border-radius:var(--radius-sm);
+
+    transition:var(--transition);
+
+}
+
+.nav-link:hover{
+
+    background:rgba(255,255,255,.15);
+
+    color:#FFF !important;
+
+}
+
+.nav-link.active{
+
+    background:rgba(255,255,255,.20);
+
+    color:#FFF !important;
+
+}
+
+.navbar-toggler{
+
+    border:none;
+
+}
+
+.navbar-toggler:focus{
+
+    box-shadow:none;
+
+}
+
+#modoOscuro{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:var(--transition);
+
+}
+
+#modoOscuro:hover{
+
+    transform:rotate(20deg);
+
+    background:#FFF;
+
+    color:var(--primary);
+
+}

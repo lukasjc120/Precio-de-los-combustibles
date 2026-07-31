@@ -1,0 +1,77 @@
+/* =====================================================
+   TABLA
+===================================================== */
+
+.table{
+
+    margin:0;
+
+    border-radius:var(--radius);
+
+    overflow:hidden;
+
+}
+
+.table thead{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+.table thead th{
+
+    border:none;
+
+    font-weight:600;
+
+    padding:16px;
+
+    white-space:nowrap;
+
+}
+
+.table tbody td{
+
+    vertical-align:middle;
+
+    padding:14px;
+
+}
+
+.table tbody tr{
+
+    transition:var(--transition);
+
+}
+
+.table tbody tr:hover{
+
+    background:#eef5ff;
+
+}
+
+.table-responsive{
+
+    border-radius:var(--radius);
+
+}
+
+.dataTables_wrapper{
+
+    margin-top:15px;
+
+}
+
+.dataTables_filter input{
+
+    border-radius:8px;
+
+}
+
+.dataTables_length select{
+
+    border-radius:8px;
+
+}

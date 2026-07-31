@@ -1,0 +1,51 @@
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+body.dark{
+
+    --background:#121212;
+
+    --surface:#1E1E1E;
+
+    --surface-hover:#2A2A2A;
+
+    --text:#F8F9FA;
+
+    --text-light:#CED4DA;
+
+    --border:#444;
+
+}
+
+body.dark .card{
+
+    background:var(--surface);
+
+}
+
+body.dark .card-header{
+
+    background:#2B2B2B;
+
+    color:white;
+
+}
+
+body.dark .table{
+
+    color:white;
+
+}
+
+body.dark .table tbody tr:hover{
+
+    background:#2F343A;
+
+}
+
+body.dark footer{
+
+    background:#000;
+
+}

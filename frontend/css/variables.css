@@ -1,0 +1,95 @@
+/* =====================================================
+   VARIABLES GLOBALES
+===================================================== */
+
+:root{
+
+    /* ========= Colores Principales ========= */
+
+    --primary:#0D6EFD;
+    --primary-dark:#0A58CA;
+
+    --success:#198754;
+    --warning:#FFC107;
+    --danger:#DC3545;
+
+    --info:#0DCAF0;
+
+    /* ========= Fondo ========= */
+
+    --background:#F5F7FA;
+
+    --surface:#FFFFFF;
+
+    --surface-hover:#F1F3F5;
+
+    /* ========= Texto ========= */
+
+    --text:#212529;
+
+    --text-light:#6C757D;
+
+    --text-white:#FFFFFF;
+
+    /* ========= Bordes ========= */
+
+    --border:#DEE2E6;
+
+    /* ========= Sombras ========= */
+
+    --shadow-small:
+        0 2px 8px rgba(0,0,0,.08);
+
+    --shadow-medium:
+        0 8px 20px rgba(0,0,0,.10);
+
+    --shadow-large:
+        0 12px 35px rgba(0,0,0,.15);
+
+    /* ========= Border Radius ========= */
+
+    --radius-sm:6px;
+
+    --radius:12px;
+
+    --radius-lg:20px;
+
+    /* ========= Espaciados ========= */
+
+    --space-xs:5px;
+
+    --space-sm:10px;
+
+    --space-md:20px;
+
+    --space-lg:30px;
+
+    --space-xl:50px;
+
+    /* ========= Tipografía ========= */
+
+    --font-family:
+
+        "Segoe UI",
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+
+    --font-xs:12px;
+
+    --font-sm:14px;
+
+    --font-md:16px;
+
+    --font-lg:20px;
+
+    --font-xl:28px;
+
+    --font-title:36px;
+
+    /* ========= Transiciones ========= */
+
+    --transition:.30s;
+
+}

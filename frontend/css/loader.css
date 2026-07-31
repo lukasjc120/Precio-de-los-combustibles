@@ -1,0 +1,31 @@
+/* =====================================================
+   LOADER
+===================================================== */
+
+.loader{
+
+    width:60px;
+
+    height:60px;
+
+    border:6px solid #EEE;
+
+    border-top:6px solid var(--primary);
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+
+    margin:auto;
+
+}
+
+@keyframes spin{
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}

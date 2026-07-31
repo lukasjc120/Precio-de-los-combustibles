@@ -1,28 +1,53 @@
-const tabla = document.getElementById("tabla");
+/* =====================================================
+   APP PRINCIPAL
+===================================================== */
 
-async function cargarDatos() {
+let datos = [];
 
-    const respuesta =
-        await fetch(
-            "http://localhost:3000/api/estaciones"
+document.addEventListener("DOMContentLoaded", async () => {
+
+    cargarTema();
+
+    mostrarLoader();
+
+    datos = await obtenerEstaciones();
+
+    cargarTabla(datos);
+
+    actualizarDashboard(datos);
+
+    ocultarLoader();
+
+    document
+
+        .getElementById("modoOscuro")
+
+        .addEventListener(
+
+            "click",
+
+            cambiarTema
+
         );
 
-    const datos = await respuesta.json();
+    document
 
-    tabla.innerHTML = "";
+        .getElementById("btnBuscar")
 
-    datos.forEach(item => {
+        .addEventListener(
 
-        tabla.innerHTML += `
-            <tr>
-                <td>${item.empresa}</td>
-                <td>${item.provincia}</td>
-                <td>${item.localidad}</td>
-                <td>${item.combustible}</td>
-                <td>$${item.precio}</td>
-            </tr>
-        `;
-    });
-}
+            "click",
 
-cargarDatos();
+            () => {
+
+                const resultado =
+
+                    aplicarFiltros(datos);
+
+                cargarTabla(resultado);
+
+            }
+
+        );
+
+});
